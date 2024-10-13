@@ -230,3 +230,25 @@ p.name, p.position {
 .section-head-text {
   margin-bottom: 30px;
 }
+
+.minecraft-btn {
+  background-color: var(--minecraft-green);
+  color: white;
+  font-size: 16px;
+  border: 3px solid var(--minecraft-brown);
+  padding: 10px;
+  text-transform: uppercase;
+  display: inline-block;
+  transition: background-color 0.3s ease;
+  box-shadow: 0 4px 0 var(--minecraft-brown), 0 8px 0 rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+
+.minecraft-btn:hover {
+  background-color: #3c8c3c;
+}
+
+.minecraft-btn:active {
+  box-shadow: none;
+  transform: translateY(4px);
+}

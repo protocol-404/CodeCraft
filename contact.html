@@ -1,43 +1,138 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <header class="navbar">
-        <h1>CodeCraft Class</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="rules-strategies.html">Rules & Strategies</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CodeCraft - Contact Us</title>
+
+    <!-- Iccon -->
+    <link rel="shortcut icon" href="images/icon.ico" type="image/x-icon">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet" />
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-success fixed-top">
+      <div class="container-fluid">
+        <a class="navbar-brand minecraft-font" href="#">CodeCraft</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+				<a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+				<a class="nav-link" href="rules.html">Rules & Strategies</a>
+            </li>
+            <li class="nav-item">
+				<a class="nav-link active" href="contact.html">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
 
     <main>
-        <section class="glass contact-form">
-            <h2>Contact Us</h2>
-            <form action="submit-form.php" method="POST">
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name" required>
+      <section class="hero text-white text-center py-5">
+        <div class="glass-bg">
+          <div class="container">
+            <h1 class="display-4 minecraft-font">Get in Touch</h1>
+            <p class="lead">We love to hear from you :)</p>
+          </div>
+        </div>
+      </section>
 
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
-
-                <label for="message">Message:</label>
-                <textarea id="message" name="message" required></textarea>
-
-                <button type="submit">Submit</button>
-            </form>
-        </section>
+      <section class="contact-section py-5">
+        <div class="container">
+          <h2 class="text-center minecraft-font mb-4">Contact Us</h2>
+          <p class="text-center mb-5">
+            Fill out the form below.
+          </p>
+          <div class="row">
+            <div class="col-md-12 mb-4">
+              <div class="card h-100 glass-bg">
+                <div class="card-body">
+                  <h3 class="card-title minecraft-font text-center mb-4">
+                    Contact Information
+                  </h3>
+                  <div class="text-center mb-4">
+                    <p>
+                      <i class="fa fa-envelope"></i> Email: contact@you.code.ma
+                    </p>
+                    <p><i class="fa fa-phone"></i> Phone: +212 600-112233</p>
+                    <p>
+                      <i class="fa fa-map-marker"></i> Address: 123 Code St,
+                      Minecraft City
+                    </p>
+                  </div>
+                  <br />
+                  <h3 class="card-title minecraft-font text-center mb-4">
+                    Send Us a Message
+                  </h3>
+                  <form>
+                    <div class="mb-3">
+                      <label for="name" class="form-label">Name</label>
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="name"
+                        required
+                      />
+                    </div>
+                    <div class="mb-3">
+                      <label for="email" class="form-label">Email</label>
+                      <input
+                        type="email"
+                        class="form-control"
+                        id="email"
+                        required
+                      />
+                    </div>
+                    <div class="mb-3">
+                      <label for="message" class="form-label">Message</label>
+                      <textarea
+                        class="form-control"
+                        id="message"
+                        rows="5"
+                        required
+                      ></textarea>
+                    </div>
+                    <button
+                      type="submit"
+                      class="btn minecraft-btn w-100 minecraft-font"
+                    >
+                      Send Message
+                    </button>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
 
-    <footer>
-        <p>&copy; 2024 CodeCraft Class. All rights reserved.</p>
+    <footer class="bg-dark text-white text-center py-3">
+      <p class="mb-0">
+        &copy; 2024 CodeCraft. All rights reserved for YouCode students.
+      </p>
     </footer>
-</body>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
 </html>
